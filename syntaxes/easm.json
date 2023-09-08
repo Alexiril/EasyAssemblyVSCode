@@ -69,7 +69,7 @@
 			"name": "support.type.pony.easm"
 		},
 		"String": {
-			"match": "(u8|u|U|L)?[\"']([^\"\\\n]|\\.|\\\n)*[\"']",
+			"match": "(u8|u|U|L)?[\"']([^\\\n]|\\.|\\\n)*[\"']",
 			"name": "string.easm"
 		},
 		"ImportStat": {
