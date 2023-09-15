@@ -100,7 +100,7 @@
 			"name": "keyword.control.expression.easm"
 		},
 		"Keywords": {
-			"match": "\\b(pass|delete|jump|if|call|push|pull|inc|dec|ptr|ssize|invoke|as)\\b",
+			"match": "\\b(pass|delete|jump|to|if|call|push|pull|inc|dec|ptr|ssize|invoke|as|array)\\b",
 			"name": "keyword.control.expression.easm"
 		},
 		"KeywordOperators": {
