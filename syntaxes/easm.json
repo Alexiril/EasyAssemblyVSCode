@@ -80,19 +80,19 @@
 			"name": "keyword.control.import.easm"
 		},
 		"Function": {
-			"match": "func [a-zA-Z0-9_]+",
+			"match": "func \\*?[a-zA-Z0-9_]+",
 			"name": "storage.type.function.easm"
 		},
 		"Structure": {
-			"match": "struct [a-zA-Z0-9_]+",
+			"match": "struct \\*?[a-zA-Z0-9_]+",
 			"name": "entity.name.struct.easm"
 		},
 		"Types": {
-			"match": "int|float|string",
-			"name": "entity.name.types.easm"
+			"match": "\\b(int|float|string|byte)\\b",
+			"name": "entity.other.inherited-class.easm"
 		},
 		"Numbers": {
-			"match": "null|[+-]?([0-9]+([eE][+-]?[0-9]+)?|([0-9]+)?\\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+\\.([eE][+-]?[0-9]+)?|[0-9]+|'0'[oO][0-7]+|'0'[xX][0-9a-fA-F]+|'0'[bB][0-1]+)",
+			"match": "\\b(null|true|false|[+-]?([0-9]+([eE][+-]?[0-9]+)?|([0-9]+)?\\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+\\.([eE][+-]?[0-9]+)?|[0-9]+|'0'[oO][0-7]+|'0'[xX][0-9a-fA-F]+|'0'[bB][0-1]+)\\b)",
 			"name": "constant.easm"
 		},
 		"NewOperator": {
@@ -100,7 +100,7 @@
 			"name": "keyword.control.expression.easm"
 		},
 		"Keywords": {
-			"match": "\\b(pass|delete|jump|to|if|call (native)?|push|pull|inc|dec|ptr|ssize|invoke|as|array|return)\\b",
+			"match": "\\b(pass|delete|jump|to|if|call (native)?|push|pull|inc|dec|ptr|bool|ssize|invoke|as|array|heap|return)\\b",
 			"name": "keyword.control.expression.easm"
 		},
 		"KeywordOperators": {
@@ -124,7 +124,7 @@
 			"name": "entity.name.param.easm"
 		},
 		"Variable": {
-			"match": "\\w+",
+			"match": "\\*?\\w+",
 			"name": "variable.easm"
 		}
 	}
